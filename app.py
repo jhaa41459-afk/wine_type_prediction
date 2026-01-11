@@ -16,7 +16,7 @@ import streamlit as st
 model = joblib.load("wine_quality_model.pkl")
 
 st.set_page_config(page_title="Wine type classifier",layout="centered")
-st.title("Wine Type lassifier App")
+st.title("Wine Type Classifier App")
 st.write("Predict whether the wine is **red** or **white** using chemical properties")
 fixed_acidity =st.number_input("Value of Fixed acidity" ,value=None)
 volatile_acidity =st.number_input(" Value of volatile_acidity",value=None)
