@@ -13,7 +13,7 @@ import numpy as np
 import joblib
 import streamlit
 
-model = joblib.load("/content/wine_quality_model.pkl")
+model = joblib.load("wine_quality_model.pkl")
 
 st.set_page_config(page_title="Wine type classifier")
 st.title("Wine Type lassifier App")
