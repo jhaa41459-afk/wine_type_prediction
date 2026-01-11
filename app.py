@@ -11,11 +11,11 @@ Original file is located at
 
 import numpy as np
 import joblib
-import streamlit
+import streamlit as st
 
 model = joblib.load("wine_quality_model.pkl")
 
-st.set_page_config(page_title="Wine type classifier")
+st.set_page_config(page_title="Wine type classifier",layout="centered")
 st.title("Wine Type lassifier App")
 st.write("Predict whether the wine is **red** or **white** using chemical properties")
 fixed_acidity =st.number_input("Value of Fixed acidity" ,value=None)
